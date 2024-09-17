@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Base styling for body */
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+} */
+.page1 {
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    width: 80%;
+    height: 70%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: 80%;
+    width: 80%;
+
+}
+
+.header {
+    text-align: center;
+    color: #3498db;
+
+}
+
+.container form {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    margin: 40px auto;
+
+    height: 90%;
+    width: 90%;
+
+}
+
+.container form textarea {
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 1rem 2rem 3rem 1rem;
+    display: flex;
+    justify-content: center;
+    height: 40%;
+    width: 80%;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.container form button {
+    background-color: #3498db;
+    color: white;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    font-size: .8rem;
+    margin-bottom: 3rem;
+    cursor: pointer;
+}
+
+.files-page,
+page2 {
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.page2 .container form {
+    height: 80%;
+
+
+}
+
+.page2 .container form .list {
+    height: 80%;
+    margin: 20px;
+    padding: 20px;
+    overflow-y: auto;
+    gap: 10px;
+
+}
+
+.page2 .container form .list .file {
+    height: 20%;
+    border-radius: .4rem;
+    display: flex;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px 0;
+    
+    /* Box shadow for a modern effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    
+    /* Background color for a clean look */
+    background-color: #fff; 
+
+    /* Transition for smooth hover effects */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect for the box */
+.page2 .container form .list .file:hover {
+    /* Slightly scale up on hover for emphasis */
+    transform: translateY(-2px);
+    
+    /* Bluish glow effect on hover */
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.7); /* Bluish glow */
+}
+
+
+
+.page2 .container form .list .file h3 {
+    width: 80%;
+}
+
+.page2 .container form .list .file .btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    gap: 1rem;
+
+}
+
+.page2 .container form .list .file .btn a {
+    height: 90%;
+    /* Height of buttons */
+    width: 35%;
+    /* Width of buttons */
+    display: flex;
+    /* Use flexbox for centering text */
+    align-items: center;
+    /* Vertically center text */
+    justify-content: center;
+    /* Horizontally center text */
+    text-align: center;
+    /* Center text alignment */
+    border: none;
+    /* Remove default border */
+    border-radius: 5px;
+    /* Rounded corners */
+    font-size: 0.9rem;
+    /* Font size of text */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    color: black;
+    /* Default text color */
+    margin: 0.5rem 0;
+    /* Space between buttons */
+    color: white;
+    text-decoration: none;
+    padding: .2rem;
+}
+
+
+
+.page2 .container form .list .file .btn a:nth-child(1) {
+    background-color: #4CAF50;
+    /* Green background for "View" */
+}
+
+.page2 .container form .list .file .btn a:nth-child(2) {
+    background-color: #2196F3;
+    /* Blue background for "Edit" */
+}
+
+.page2 .container form .list .file .btn a:nth-child(3) {
+    background-color: #f44336;
+    /* Red background for "Delete" */
+}
+
+.page2 .container form .list .file .btn a:hover {
+    opacity: 0.8;
+    /* Slightly dim the button on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge the button on hover */
+}
+
+.page2 .container form .list .file .btn a:active {
+    transform: scale(0.95);
+    /* Slightly shrink the button when clicked */
+}
+
+.page2 .container form .New-button {
+    height: 47px;
+    width: 47px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: sticky;
+    top: 100%;
+    margin: 20px;
+
+
+}
+
+/* Button Container */
+.page2 .container .New-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2196F3;
+    /* Default background */
+    border-radius: 50%;
+    /* Circular button */
+    width: 80px;
+    /* Button size */
+    height: 80px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+/* Plus Icon */
+.page2 .container .New-button svg {
+    height: 50px;
+    /* Icon size */
+    width: 50px;
+    stroke: white;
+    /* Initial icon stroke color */
+    transition: stroke 0.3s ease, transform 0.3s ease;
+    /* Smooth transition for icon color change */
+}
+
+/* Button Hover Effect */
+.page2 .container .New-button:hover {
+    background: #1E88E5;
+    /* Change background color on hover */
+    transform: scale(1.1);
+    /* Slight zoom-in effect on hover */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    /* Add shadow on hover for a floating effect */
+}
+
+/* Icon Hover Effect */
+.page2 .container .New-button:hover svg path {
+    stroke: yellow;
+    /* Change icon stroke color on hover */
+}
+
+/* Optional focus effect when clicked */
+.page2 .container .New-button:active {
+    transform: scale(0.9);
+    /* Button shrinks slightly when clicked */
+    background: #1565C0;
+    /* Darker blue when active */
+}
+
+.viewPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+
+}
+
+.viewPage .container {
+    max-width: 100%;
+    /* Ensures the container width is responsive */
+    width: 99%;
+    /* Adjust as needed */
+    margin: 0 auto;
+    /* Centers the container */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+    /* Ensures long words or URLs break */
+    overflow-wrap: break-word;
+    /* Ensures text doesn't overflow */
+}
+
+.viewPage .container #file-content  pre{
+    white-space: pre-wrap; /* Ensures text within <pre> wraps */
+    word-wrap: break-word;
+
+}
+.viewPage .container .back-btn{
+text-decoration: none;
+cursor: pointer;
+color: white;
+background-color: #2195f3dc;
+padding: .2rem;
+border-radius: .5rem;
+margin-top: 1rem;
+height: 1rem; 
+width: 3rem; 
+
+}

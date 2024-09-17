@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css">
+    <title>Create File</title>
+</head>
+<body>
+    <div class="creation-page page1">
+        <div class="container CreatePage">
+            <h1 class="header">Create a New File</h1>
+            <form action="/create" method="post">
+                <label for="content">Enter content for the file:</label>
+                <textarea id="content" name="content" class="fileDescription" 
+                rows="4" cols="50" class="textarea"></textarea><br><br>
+                <button class="btn" type="submit">Create File</button>
+            </form>
+        </div>
+
+    </div>
+    <!-- <div class="page2 files-page">
+        <div class="container">
+            <h1 class="header">List of Daily Expenses</h1>
+            <form action="/" method="get">
+                <div class="list">
+                    <% files.forEach(function(file) { %>
+                        <div class="file">
+                            <h3><%= file %></h3>
+                            <div class="btn">
+                                <button>View</button>
+                                <button>Edit</button>
+                                <button>Delete</button>
+                            </div>
+                        </div>
+                    <% }); %>
+                </div>
+                <div class="New-button"></div>
+            </form>
+        </div>
+
+    </div> -->
+    <script src="/public/script.js"></script>
+</body>
+</html>

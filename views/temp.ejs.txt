@@ -1,0 +1,37 @@
+    <!-- <div class="container">
+        <header class="header">
+            <h1>Khatabook - Expense Tracker</h1>
+            <div class="total-spend">
+                Total Monthly Spend: ₹<%= totalSpend %>
+            </div>
+        </header>
+
+        <div class="content">
+            <table class="file-list">
+                <thead>
+                    <tr>
+                        <th>File Name</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% files.forEach(function(file){ %>
+                        <tr>
+                            <td><%= file %></td>
+                            <td>
+                                <a href="/view/<%= file %>" class="btn view">View</a>
+                                <a href="/edit/<%= file %>" class="btn edit">Edit</a>
+                                <form action="/delete/<%= file %>" method="POST" class="inline-form">
+                                    <button type="submit" class="btn delete">Delete</button>
+                                </form>
+                            </td>
+                        </tr>
+                    <% }); %>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="add-button-container">
+            <a href="/create" class="add-button">+</a>
+        </div>
+    </div> -->
